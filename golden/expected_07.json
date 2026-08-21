@@ -1,0 +1,19 @@
+{
+  "company_name": "PT Edukasi Masa Depan",
+  "industry": "Education Technology",
+  "funding_stage": "Series A",
+  "funding_amount": 15000000000,
+  "revenue": 48000000000,
+  "ebitda": 6000000000,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Putri Rahman",
+      "role": "CEO"
+    },
+    {
+      "name": "Daniel Hartono",
+      "role": "CTO"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "company_name": "Sinar Energi",
+  "industry": "Solar Energy",
+  "funding_stage": null,
+  "funding_amount": 35000000000,
+  "revenue": 115000000000,
+  "ebitda": 14000000000,
+  "key_risks": [
+    "Reliance on government regulation",
+    "Project execution delays",
+    "Exposure to imported equipment prices"
+  ],
+  "management_team": [
+    {
+      "name": "Rizky Aditya",
+      "role": "CEO"
+    },
+    {
+      "name": "Clara Lim",
+      "role": "CFO"
+    }
+  ]
+}

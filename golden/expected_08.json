@@ -1,0 +1,24 @@
+{
+  "company_name": "PT Laut Indonesia",
+  "industry": "Seafood Processing and Export",
+  "funding_stage": "Series B",
+  "funding_amount": 60000000000,
+  "revenue": 275000000000,
+  "ebitda": 31000000000,
+  "key_risks": [
+    "Foreign exchange volatility",
+    "Seafood supply availability",
+    "Export regulation changes",
+    "Customer concentration"
+  ],
+  "management_team": [
+    {
+      "name": "Bayu Setiawan",
+      "role": "CEO"
+    },
+    {
+      "name": "Felicia Tan",
+      "role": "COO"
+    }
+  ]
+}

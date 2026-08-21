@@ -1,0 +1,23 @@
+{
+  "company_name": "PT Sehat Bersama",
+  "industry": "Healthcare Services",
+  "funding_stage": "Series A",
+  "funding_amount": 18000000000,
+  "revenue": 72000000000,
+  "ebitda": null,
+  "key_risks": [
+    "Doctor retention",
+    "Regulatory compliance",
+    "Slow ramp-up of new clinic locations"
+  ],
+  "management_team": [
+    {
+      "name": "Dr. Rafi Mahendra",
+      "role": "CEO"
+    },
+    {
+      "name": "Lina Kusuma",
+      "role": "COO"
+    }
+  ]
+}

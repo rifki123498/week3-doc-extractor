@@ -12,7 +12,7 @@ client = anthropic.Anthropic(api_key=API_KEY)
 
 
 def render_prompt(document: str) -> str:
-    prompt_path = Path("prompts/extract_v1.txt")
+    prompt_path = Path("prompts/extract_v2.txt")
     prompt_template = prompt_path.read_text(encoding="utf-8")
 
     schema = json.dumps(
@@ -24,23 +24,123 @@ def render_prompt(document: str) -> str:
 Example 1
 
 Document:
-PT Alpha is an Indonesian consumer company.
-The company generated Rp120 billion in revenue.
-It is seeking Rp30 billion in Series A funding.
-The CEO is Andi Pratama.
+PT Sentosa Snacks manufactures packaged snack products for the Indonesian market.
+The company generated Rp100 billion in revenue.
+It is raising Rp25 billion in Series A funding.
+The CEO is Raka Pranoto.
 
 Output:
 {
-  "company_name": "PT Alpha",
-  "industry": "Consumer",
+  "company_name": "PT Sentosa Snacks",
+  "industry": "Food and Beverage",
   "funding_stage": "Series A",
-  "funding_amount": 30000000000,
-  "revenue": 120000000000,
+  "funding_amount": 25000000000,
+  "revenue": 100000000000,
   "ebitda": null,
   "key_risks": [],
   "management_team": [
     {
-      "name": "Andi Pratama",
+      "name": "Raka Pranoto",
+      "role": "CEO"
+    }
+  ]
+}
+
+Example 2
+
+Document:
+PT Cloud Kerja provides subscription-based workflow software to business customers.
+Revenue was Rp60 billion with EBITDA of Rp8 billion.
+The company is seeking Rp20 billion in Series B financing.
+The CEO is Maya Santoso.
+
+Output:
+{
+  "company_name": "PT Cloud Kerja",
+  "industry": "B2B Software",
+  "funding_stage": "Series B",
+  "funding_amount": 20000000000,
+  "revenue": 60000000000,
+  "ebitda": 8000000000,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Maya Santoso",
+      "role": "CEO"
+    }
+  ]
+}
+
+Example 3
+
+Document:
+PT Klinik Sejahtera operates outpatient medical clinics in Indonesia.
+The company recorded Rp45 billion in revenue.
+No EBITDA or funding stage was disclosed.
+The CEO is Dr. Indra Wijaya.
+
+Output:
+{
+  "company_name": "PT Klinik Sejahtera",
+  "industry": "Healthcare Services",
+  "funding_stage": null,
+  "funding_amount": null,
+  "revenue": 45000000000,
+  "ebitda": null,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Dr. Indra Wijaya",
+      "role": "CEO"
+    }
+  ]
+}
+
+Example 4
+
+Document:
+Surya Atap develops and operates rooftop solar installations for commercial buildings.
+The company generated Rp80 billion in revenue and Rp9 billion in EBITDA.
+It is seeking Rp30 billion of growth capital.
+The CEO is Fajar Nugroho.
+
+Output:
+{
+  "company_name": "Surya Atap",
+  "industry": "Solar Energy",
+  "funding_stage": null,
+  "funding_amount": 30000000000,
+  "revenue": 80000000000,
+  "ebitda": 9000000000,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Fajar Nugroho",
+      "role": "CEO"
+    }
+  ]
+}
+
+Example 5
+
+Document:
+PT Kopi Rakyat operates a network of coffee shops across major Indonesian cities.
+Revenue reached Rp55 billion.
+The CEO is Anita Prasetyo.
+No funding amount, EBITDA, or investment risks were provided.
+
+Output:
+{
+  "company_name": "PT Kopi Rakyat",
+  "industry": "Coffee Shops",
+  "funding_stage": null,
+  "funding_amount": null,
+  "revenue": 55000000000,
+  "ebitda": null,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Anita Prasetyo",
       "role": "CEO"
     }
   ]
@@ -53,15 +153,12 @@ Output:
         document=document,
     )
 
-
 def call_llm(messages: list[dict[str, str]]) -> str:
     response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=1000,
-        temperature=0,
-        messages=messages,
-    )
-
+    model="claude-sonnet-4-6",
+    max_tokens=1000,
+    messages=messages,
+)
     return response.content[0].text
 
 

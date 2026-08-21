@@ -1,0 +1,23 @@
+{
+  "company_name": "PT Garuda Digital",
+  "industry": "B2B Software",
+  "funding_stage": "Series A",
+  "funding_amount": 25000000000,
+  "revenue": 90000000000,
+  "ebitda": 10000000000,
+  "key_risks": [
+    "High customer churn",
+    "Dependence on enterprise renewals",
+    "Increasing competition from regional SaaS providers"
+  ],
+  "management_team": [
+    {
+      "name": "Kevin Tan",
+      "role": "CEO"
+    },
+    {
+      "name": "Rina Hartono",
+      "role": "CTO"
+    }
+  ]
+}

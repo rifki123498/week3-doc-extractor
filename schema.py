@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class ManagementMember(BaseModel):
@@ -15,3 +15,10 @@ class InvestmentOpportunity(BaseModel):
     ebitda: float | None = None
     key_risks: list[str] = []
     management_team: list[ManagementMember] = []
+
+    @field_validator("company_name")
+    @classmethod
+    def company_name_must_be_known(cls, value):
+        if value.strip().lower() in {"unknown", "n/a", "none", ""}:
+            raise ValueError("company_name must be explicitly stated in the document")
+        return value

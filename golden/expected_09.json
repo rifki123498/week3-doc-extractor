@@ -1,0 +1,15 @@
+{
+  "company_name": "PT Kopi Nusantara",
+  "industry": "Coffee Shops",
+  "funding_stage": null,
+  "funding_amount": null,
+  "revenue": 65000000000,
+  "ebitda": null,
+  "key_risks": [],
+  "management_team": [
+    {
+      "name": "Aditya Wibowo",
+      "role": "CEO"
+    }
+  ]
+}

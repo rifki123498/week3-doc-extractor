@@ -1,0 +1,32 @@
+{
+  "company_name": "PT Bumi Retail",
+  "industry": "Specialty Retail",
+  "funding_stage": "Series C",
+  "funding_amount": 75000000000,
+  "revenue": 320000000000,
+  "ebitda": 38000000000,
+  "key_risks": [
+    "Aggressive store expansion",
+    "Inventory obsolescence",
+    "Lease cost inflation",
+    "Weaker consumer spending"
+  ],
+  "management_team": [
+    {
+      "name": "Andre Wijaya",
+      "role": "Chief Executive Officer"
+    },
+    {
+      "name": "Melisa Gunawan",
+      "role": "Chief Financial Officer"
+    },
+    {
+      "name": "Fajar Hidayat",
+      "role": "Chief Operating Officer"
+    },
+    {
+      "name": "Nadia Putri",
+      "role": "Chief Commercial Officer"
+    }
+  ]
+}

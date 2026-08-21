@@ -1,0 +1,23 @@
+{
+  "company_name": "PT Nusantara Logistics",
+  "industry": "Logistics",
+  "funding_stage": null,
+  "funding_amount": 50000000000,
+  "revenue": 210000000000,
+  "ebitda": 22000000000,
+  "key_risks": [
+    "Fuel price volatility",
+    "Customer concentration",
+    "Increasing fleet maintenance costs"
+  ],
+  "management_team": [
+    {
+      "name": "Dimas Prakoso",
+      "role": "CEO"
+    },
+    {
+      "name": "Anita Sari",
+      "role": "CFO"
+    }
+  ]
+}

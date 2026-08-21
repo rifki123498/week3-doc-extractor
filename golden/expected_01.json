@@ -1,0 +1,23 @@
+{
+  "company_name": "PT Merah Putih Foods",
+  "industry": "Food and Beverage",
+  "funding_stage": "Series B",
+  "funding_amount": 40000000000,
+  "revenue": 150000000000,
+  "ebitda": 18000000000,
+  "key_risks": [
+    "Dependency on a small number of distributors",
+    "Increasing raw material costs",
+    "Competition from larger consumer brands"
+  ],
+  "management_team": [
+    {
+      "name": "Arif Pratama",
+      "role": "CEO"
+    },
+    {
+      "name": "Sarah Wijaya",
+      "role": "CFO"
+    }
+  ]
+}
