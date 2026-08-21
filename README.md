@@ -68,3 +68,5 @@ Activate the virtual environment and run:
 
 ```bash
 python extractor.py
+
+Built as part of the Week 3 structured extraction exercise.
