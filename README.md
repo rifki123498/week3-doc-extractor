@@ -67,4 +67,11 @@ The malformed `doc_10.txt` test correctly fails after 3 attempts instead of retu
 Activate the virtual environment and run:
 
 ```bash
+
+## Key Learnings
+
+- Structured outputs are more reliable when combined with Pydantic validation.
+- Few-shot examples improve consistency for ambiguous fields such as industry.
+- A constrained taxonomy can significantly improve classification accuracy.
+- Golden-set evaluation makes prompt improvements measurable rather than subjective.
 python extractor.py
